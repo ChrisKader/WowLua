@@ -1,0 +1,2 @@
+package-as: WowLua
+enable-nolib-creation: no
