@@ -159,7 +159,7 @@
 							<Offset x="7" y="-6"/>
 						</Anchor>
 					</Anchors>
-				</Texture>	
+				</Texture>
 			</Layer>
 		</Layers>
 		<Frames>
@@ -662,14 +662,12 @@
 					<OnShow>
 						WowLua:UpdateScrollingMessageFrame(self);
 					</OnShow>
-                    <OnMouseDown>
-                        WowLuaFrameCommandEditBox:SetFocus()
-                    </OnMouseDown>
-                    <OnLoad>
-                        self:SetFont([[Interface\AddOns\WowLua\fonts\VeraMono.ttf]], 14)
-                        self:SetJustifyH("LEFT")
-                        self:SetFading(False)
-                    </OnLoad>
+          <OnLoad>
+              self:SetFont([[Interface\AddOns\WowLua\fonts\VeraMono.ttf]], 14)
+              self:SetJustifyH("LEFT")
+              self:SetFading(False)
+              self:SetTextCopyable(true)
+          </OnLoad>
 				</Scripts>
 			</ScrollingMessageFrame>
 		</Frames>

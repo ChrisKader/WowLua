@@ -538,11 +538,11 @@ StaticPopupDialogs["WOWLUA_UNSAVED"] = {
 	end
 }
 
-function WowLua:Button_Previous()
+function WowLua:Button_Previous(button)
 	self:GoToPage(self:GetCurrentPage() - 1)
 end
 
-function WowLua:Button_Next()
+function WowLua:Button_Next(button)
 	self:GoToPage(self:GetCurrentPage() + 1)
 end
 
@@ -611,7 +611,7 @@ function WowLua.lockedTextChanged(box)
 	end
 end
 
-function WowLua:Button_Run()
+function WowLua:Button_Run(button)
 	local text = WowLuaFrameEditBox:GetText()
 
 	-- Run the script, if there is an error then highlight it
@@ -643,11 +643,11 @@ function WowLua:Button_Run()
 	end
 end
 
-function WowLua:Button_Config()
+function WowLua:Button_Config(button)
     InterfaceOptionsFrame_OpenToCategory("WowLua")
 end
 
-function WowLua:Button_Close()
+function WowLua:Button_Close(button)
 	if self:IsModified() then
 		-- Display the unsaved changes dialog
 		local dialog = StaticPopup_Show("WOWLUA_UNSAVED")
