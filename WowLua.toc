@@ -1,7 +1,7 @@
-## Interface: 80000
+## Interface: 90200
 ## Title: WowLua
-## Version: v80000-1.0.0
-## Author: Cladhaire
+## Version: 9.2.0.000.001
+## Author: Cladhaire, ChrisKader
 ## Notes: Interactive Lua interpreter and scratchpad
 ## LoadManagers: AddonLoader
 ## X-LoadOn-Slash: /wowlua, /lua, /wowluarun, /luarun
